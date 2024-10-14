@@ -1,0 +1,128 @@
+.aside {
+    width: 100%;
+    border-right: 4px solid #d4af37;
+    background-color: #20232a; /* Background color for better contrast */
+}
+
+.aside .content {
+    margin-left: 50px;
+}
+
+.aside figure {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.4s ease-in-out; /* Smooth transition */
+    box-shadow: 0px 0px 5px 0px #d4af37; /* Initial shadow */
+    animation-name: hiring;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.aside figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.aside .details p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.aside .details a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.aside .details a:hover {
+    text-decoration: underline;
+}
+
+.aside .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.aside .icon i {
+    color: #d4af37;
+    transition: color 0.3s ease;
+}
+
+.aside .icon i:hover {
+    color: white;
+}
+
+.aside .btn-outline {
+    border-color: #d4af37;
+    background-color: transparent;
+    color: #d4af37;
+}
+
+.aside .btn-outline:hover {
+    background-color: #d4af37;
+    color: white;
+}
+
+.aside button:not(.btn-outline) {
+    border-color: #d4af37;
+    background-color: #d4af37;
+    color: white;
+}
+
+.aside button:not(.btn-outline):hover {
+    border-color: #d4af37;
+    background-color: transparent;
+    color: #d4af37;
+}
+
+.aside .but a {
+    color: white;
+    background-color: #d4af37;
+    border-color: #d4af37;
+    transition: 0.2s all;
+}
+
+.aside .but a:hover {
+    background-color: transparent;
+    color: #d4af37;
+}
+
+.aside h3 {
+    margin-top: -70px;
+    color: #d4af37;
+    animation: hiring2 2s ease-in-out  infinite ;
+} 
+
+@keyframes hiring {
+    0% {
+        box-shadow: 0px 0px 10px 2px #d4af37; /* Initial shadow */
+    }
+
+    50% {
+        box-shadow: 0px 0px 20px 2px #d4af37; /* Initial shadow */
+    }
+
+    100% {
+        box-shadow: 0px 0px 10px 2px #d4af37; /* Initial shadow */
+    }
+}
+
+@keyframes hiring2 {
+    0% {
+        color:  #d4af373e; /* Initial shadow */
+    }
+
+    50% {
+        color:  #d4af37; /* Initial shadow */
+    }
+
+    100% {
+        color:  #d4af373e; /* Initial shadow */
+    }
+}

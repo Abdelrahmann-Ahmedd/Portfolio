@@ -1,0 +1,18 @@
+.contact {
+    display: none;
+    margin-top: 120px;
+}
+
+.btn:hover {
+    color:  white;
+}
+
+input:not(.btn) , textarea {
+    height: 50px;
+    border-color: #D4AF37;
+}
+
+textarea {
+    height: 80px;
+}
+
