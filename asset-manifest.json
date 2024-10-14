@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.0ecea17c.css",
+    "main.js": "/Portfolio/static/js/main.d153288c.js",
+    "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/Screenshot (340).png": "/Portfolio/static/media/Screenshot (340).b32b6eaaf9f19f75563a.png",
+    "static/media/Screenshot (337).png": "/Portfolio/static/media/Screenshot (337).2ee11713806774d2cd42.png",
+    "static/media/fa-solid-900.ttf": "/Portfolio/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/Screenshot (339).png": "/Portfolio/static/media/Screenshot (339).b745c37277811c358436.png",
+    "static/media/66468364.jpg": "/Portfolio/static/media/66468364.a2b1b37ac5adc73f294b.jpg",
+    "static/media/Screenshot (338).png": "/Portfolio/static/media/Screenshot (338).3cc6bcb9baf2fd9a6ac8.png",
+    "static/media/Screenshot (341).png": "/Portfolio/static/media/Screenshot (341).b7864d24402f7dde9a7e.png",
+    "static/media/fa-brands-400.ttf": "/Portfolio/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/fa-solid-900.woff2": "/Portfolio/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/fa-brands-400.woff2": "/Portfolio/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/fa-regular-400.ttf": "/Portfolio/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/Screenshot (336).png": "/Portfolio/static/media/Screenshot (336).05897b2dd4bd4fb09ed7.png",
+    "static/media/calage.png": "/Portfolio/static/media/calage.7c4329a20604fd01d4fe.png",
+    "static/media/fa-regular-400.woff2": "/Portfolio/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/fa-v4compatibility.ttf": "/Portfolio/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/Portfolio/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "static/media/jquery-4.svg": "/Portfolio/static/media/jquery-4.fcc480227fd31fecc887db807010bf1d.svg",
+    "index.html": "/Portfolio/index.html",
+    "main.0ecea17c.css.map": "/Portfolio/static/css/main.0ecea17c.css.map",
+    "main.d153288c.js.map": "/Portfolio/static/js/main.d153288c.js.map",
+    "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ecea17c.css",
+    "static/js/main.d153288c.js"
+  ]
+}
