@@ -1,10 +1,11 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router'
 import './App.css'
 import Layout from './Pages/Layout/Layout'
 import Portfolio from './Pages/Portfolio/Portfolio';
 import Contact from './Pages/Contact/Contact';
 import Resume from './Pages/Resume/Resume';
 import About from './Pages/About/About';
+import Error from './Pages/Error/Error';
 
 const myRouter = createBrowserRouter([
   {path:"/" , element: <Layout/> ,children: [
@@ -14,7 +15,7 @@ const myRouter = createBrowserRouter([
     { path:"/resume", element: <Resume/>},
     { path:"/About", element: <About/>},
     { path:"/About", element: <About/>},
-    { path:"*", element: <Error/>},
+    { path:"*", element: <Error />},
   ]}
 ])
 
