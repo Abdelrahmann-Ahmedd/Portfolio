@@ -1,12 +1,44 @@
-# React + Vite
+📁 Personal Portfolio
+  A fully responsive personal portfolio website built with React.js and Bootstrap. This project showcases my web development projects, resume, and contact information in a sleek, modern layout with animations and routing.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛠️ Tech Stack
+  Frontend: React.js, React Router, Bootstrap 5
+  Styling: CSS3, Bootstrap classes, Framer Motion (for animation)
+  Deployment: GitHub Pages
 
-Currently, two official plugins are available:
+📂 Features
+  ✅ Fully responsive and mobile-friendly
+  ✅ Dark theme with elegant UI
+  ✅ Animated route transitions using Framer Motion
+  ✅ Interactive project filter (Frontend / Fullstack / All)
+  ✅ Structured layout with sections: About, Resume, Portfolio, Contact
+  ✅ Sidebar for navigation with top-right toggler on small screens
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🧾 Pages Overview
+  /about – Brief bio and goals
+  /resume – Experience, education, and skills (with smooth animation)
+  /portfolio – Projects with images, filtering by category
+  /contact – Contact form and social links
+  404 Not Found – Animated fallback page
 
-## Expanding the ESLint configuration
+📁 Folder Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+src/
+│
+├── components/
+│   ├── Navbar/
+│   ├── AnimatedPage/
+│   └── ...
+│
+├── pages/
+│   ├── About.jsx
+│   ├── Resume.jsx
+│   ├── Portfolio.jsx
+│   └── Contact.jsx
+│
+├── assets/
+├── App.js
+└── index.js
+
+
+
