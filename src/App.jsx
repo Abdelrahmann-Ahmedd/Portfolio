@@ -8,7 +8,7 @@ import About from './Pages/About/About';
 import Error from './Pages/Error/Error';
 
 const myRouter = createHashRouter([
-  {path:"/" , element: <Layout/> ,children: [
+  {path:"/Portfolio" , element: <Layout/> ,children: [
     { path:"", element: <Portfolio/>},
     { path:"portfolio", element: <Portfolio/>},
     { path:"contact", element: <Contact/>},
