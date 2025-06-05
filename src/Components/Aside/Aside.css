@@ -1,0 +1,92 @@
+.aside-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    width: 330px;
+    overflow-y: auto;
+    transition: width 0.3s ease;
+  }
+  
+  /* Large profile image shown only on md+ */
+  .profile-img-large {
+    width: 75%;
+    display: block;
+  }
+  
+  /* Small profile image shown only on mobile */
+  .profile-img-small {
+    width: 40px;
+    display: none;
+    margin: 0 auto 1rem auto;
+  }
+  
+  /* Hide name, role, and separator on small screens */
+  .name,
+  .role,
+  .separator {
+    display: block;
+  }
+  
+  /* Contact list text */
+  .contact-title,
+  .contact-detail {
+    display: block;
+  }
+  
+  /* Responsive for small screens */
+  @media (max-width: 992px) {
+    .aside-container {
+      width: 65px !important;
+      padding: 1rem 0.5rem;
+    }
+  
+    /* Show small profile img, hide large */
+    .profile-img-large {
+      display: none;
+    }
+  
+    .profile-img-small {
+      display: block;
+    }
+    .smalling {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    /* Hide name, role, separator */
+    .name,
+    .role,
+    .separator {
+      display: none;
+    }
+  
+    /* Hide contact text, keep icons only */
+    .contact-title,
+    .contact-detail {
+      display: none;
+    }
+  
+    /* Center icons */
+    .icon-container {
+      width: 100%;  
+      margin-left: 15px;
+    }
+  
+    .contact-item {
+      justify-content: center;
+      align-items: center;
+    }
+  
+    /* Center social icons */
+    .social-icons {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .social-icons i {
+      margin-top: 20px;
+    }
+  }
+  
