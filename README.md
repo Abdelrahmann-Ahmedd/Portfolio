@@ -22,23 +22,22 @@
   404 Not Found – Animated fallback page
 
 📁 Folder Structure
-
-src/
-│
-├── components/
-│   ├── Navbar/
-│   ├── AnimatedPage/
-│   └── ...
-│
-├── pages/
-│   ├── About.jsx
-│   ├── Resume.jsx
-│   ├── Portfolio.jsx
-│   └── Contact.jsx
-│
-├── assets/
-├── App.js
-└── index.js
+  src/
+  │
+  ├── components/
+  │   ├── Navbar/
+  │   ├── AnimatedPage/
+  │   └── ...
+  │
+  ├── pages/
+  │   ├── About.jsx
+  │   ├── Resume.jsx
+  │   ├── Portfolio.jsx
+  │   └── Contact.jsx
+  │
+  ├── assets/
+  ├── App.js
+  └── index.js
 
 
 
