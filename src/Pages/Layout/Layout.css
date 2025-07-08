@@ -1,14 +1,21 @@
-/* Desktop layout with wide aside */
+.layout-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
 .content-area {
-    margin-left: 370px;
-    transition: margin-left 0.3s ease;
+  margin-left: 370px;
+  transition: all 0.3s ease;
+  flex-grow: 1;
+}
+
+@media (max-width: 992px) {
+  .layout-container {
+    flex-direction: column;
   }
-  
-  /* On small screens, reduce aside width to 60px, adjust content margin */
-  @media (max-width: 992px) {
-    .content-area {
-      margin-left: 80px !important;
-    }
-    
+
+  .content-area {
+    margin-left: 0 !important;
   }
-  
+}

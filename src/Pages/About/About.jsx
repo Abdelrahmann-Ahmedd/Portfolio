@@ -18,7 +18,7 @@ export default function About() {
 
       {/* What I Do */}
       <div>
-        <h2 className="mb-4 text-start border-start border-warning border-4 ps-3"style={{color:"rgb(201, 169, 63)"}} >What I Do</h2>
+        <h2 className="mb-4 text-start border-start border-warning border-4 ps-3" >What I Do</h2>
         <div className="row g-4">
           <div className="col-xl-4 col-lg-6">
             <div className="card h-100 shadow-sm border-0 rounded-4 text-center p-4 bg-light">

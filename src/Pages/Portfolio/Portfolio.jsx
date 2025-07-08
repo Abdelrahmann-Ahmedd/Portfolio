@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+// eslint-disable-next-line no-unused-vars
+import { motion, AnimatePresence } from 'framer-motion';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AnimatedPage from '../AnimatedPage/AnimatedPage';
 import imageSrc01 from '../../assets/Screenshot (122).png';
@@ -8,6 +10,7 @@ import imageSrc04 from '../../assets/Screenshot (125).png';
 import imageSrc05 from '../../assets/Screenshot (126).png';
 import imageSrc06 from '../../assets/Screenshot (127).png';
 import imageSrc07 from '../../assets/Screenshot (128).png';
+
 export default function Portfolio() {
   const projects = [
     {
@@ -113,49 +116,64 @@ export default function Portfolio() {
           {filteredProjects.length === 0 && (
             <p className="text-light">No projects found in this category.</p>
           )}
-          {filteredProjects.map(project => (
-            <div className="col-lg-4 col-md-6" key={project.id}>
-              <a href={project.url} target="_blank" rel="noopener noreferrer" className="text-decoration-none">
-                <div
-                  className="card h-100 bg-dark border-0 shadow-lg"
-                  style={{
-                    borderRadius: '10px',
-                    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                  }}
-                  onMouseEnter={e => {
-                    e.currentTarget.style.transform = 'scale(1.02)';
-                    e.currentTarget.style.boxShadow = '0 6px 20px rgba(0,0,0,0.3)';
-                  }}
-                  onMouseLeave={e => {
-                    e.currentTarget.style.transform = 'scale(1)';
-                    e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.2)';
-                  }}
+          <AnimatePresence mode="wait">
+            {filteredProjects.map(project => (
+              <motion.div
+                className="col-lg-4 col-md-6"
+                key={project.id}
+                layout
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -30 }}
+                transition={{ duration: 0.4, ease: 'easeInOut' }}
+              >
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-decoration-none"
                 >
-                  {project.image && (
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="card-img-top"
-                      style={{
-                        height: '200px',
-                        width: '100%',
-                        borderTopLeftRadius: '10px',
-                        borderTopRightRadius: '10px',
-                        transition: 'opacity 0.3s',
-                      }}
-                    />
-                  )}
-                  <div className="card-body">
-                    <h6 className="text-warning">{project.category.toUpperCase()}</h6>
-                    <h5 className="card-title text-white">{project.title}</h5>
-                    <p className="card-text text-light" style={{ fontSize: '0.95rem' }}>
-                      {project.description}
-                    </p>
+                  <div
+                    className="card h-100 bg-dark border-0 shadow-lg"
+                    style={{
+                      borderRadius: '10px',
+                      transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                    }}
+                    onMouseEnter={e => {
+                      e.currentTarget.style.transform = 'scale(1.02)';
+                      e.currentTarget.style.boxShadow = '0 6px 20px rgba(0,0,0,0.3)';
+                    }}
+                    onMouseLeave={e => {
+                      e.currentTarget.style.transform = 'scale(1)';
+                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.2)';
+                    }}
+                  >
+                    {project.image && (
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="card-img-top"
+                        style={{
+                          height: '200px',
+                          width: '100%',
+                          borderTopLeftRadius: '10px',
+                          borderTopRightRadius: '10px',
+                          transition: 'opacity 0.3s',
+                        }}
+                      />
+                    )}
+                    <div className="card-body">
+                      <h6 className="text-warning">{project.category.toUpperCase()}</h6>
+                      <h5 className="card-title text-white">{project.title}</h5>
+                      <p className="card-text text-light" style={{ fontSize: '0.95rem' }}>
+                        {project.description}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
-          ))}
+                </a>
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
       </div>
     </AnimatedPage>

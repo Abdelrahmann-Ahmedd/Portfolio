@@ -3,7 +3,7 @@ import { Outlet } from 'react-router';
 import Navbar from '../../Components/Navbar/Navbar';
 import Aside from '../../Components/Aside/Aside';
 import Spinner from '../../Components/Spinner/Spinner';
-import './Layout.css'
+import './Layout.css';
 
 export default function Layout() {
   const [loading, setLoading] = useState(true);
@@ -17,11 +17,11 @@ export default function Layout() {
 
   return (
     <div className="bg-black text-white" style={{ padding: '20px' }}>
-      <div className="d-flex gap-3">
+      <div className="layout-container">
         <Aside />
 
         {/* Use CSS class 'content-area' instead of inline margin */}
-        <div className="flex-grow-1 bg-dark rounded p-4 position-relative content-area" style={{ minHeight: '94.5vh' }}>
+        <div className="bg-dark rounded p-4 position-relative content-area" style={{ minHeight: '94.5vh' }}>
           <Navbar />
           <Outlet />
         </div>
