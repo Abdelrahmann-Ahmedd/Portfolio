@@ -10,16 +10,17 @@ import imageSrc04 from '../../assets/Screenshot (125).png';
 import imageSrc05 from '../../assets/Screenshot (126).png';
 import imageSrc06 from '../../assets/Screenshot (127).png';
 import imageSrc07 from '../../assets/Screenshot (128).png';
+import imageSrc08 from '../../assets/Screenshot (164).png'
 
 export default function Portfolio() {
   const projects = [
     {
       id: 1,
-      title: 'Movie App',
-      description: 'A responsive Movie website using React and Bootstrap.',
+      title: 'Techno Store',
+      description: 'A responsive E-commerce App using Nextjs, TypeScript, Redux and Bootstrap .',
       category: 'frontend',
-      url: 'https://abdelrahmann-ahmedd.github.io/movie/',
-      image: imageSrc03
+      url: 'https://techno-store-33qe.vercel.app/',
+      image: imageSrc08
     },
     {
       id: 2,
@@ -68,6 +69,14 @@ export default function Portfolio() {
       category: 'design',
       url: 'https://abdelrahmann-ahmedd.github.io/ecommerce-product-page/',
       image: imageSrc02
+    },
+    {
+      id: 8,
+      title: 'Movie App',
+      description: 'A responsive Movie website using React and Bootstrap.',
+      category: 'frontend',
+      url: 'https://abdelrahmann-ahmedd.github.io/movie/',
+      image: imageSrc03
     },
   ];
 
