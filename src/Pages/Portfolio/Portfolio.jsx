@@ -10,7 +10,8 @@ import imageSrc04 from '../../assets/Screenshot (125).png';
 import imageSrc05 from '../../assets/Screenshot (126).png';
 import imageSrc06 from '../../assets/Screenshot (127).png';
 import imageSrc07 from '../../assets/Screenshot (128).png';
-import imageSrc08 from '../../assets/Screenshot (164).png'
+import imageSrc08 from '../../assets/Screenshot (164).png';
+import imageSrc09 from '../../assets/Screenshot (167).png';
 
 export default function Portfolio() {
   const projects = [
@@ -24,11 +25,11 @@ export default function Portfolio() {
     },
     {
       id: 2,
-      title: 'Employee System',
-      description: 'A RESTful API built with Java and Springboot and React.',
-      category: 'fullstack',
-      url: 'https://github.com/Abdelrahmann-Ahmedd/React-Spring-FullStack-CRUD-System',
-      image: imageSrc07
+      title: 'Weather App',
+      description: 'A responsive Weather App using React, TypeScript, ContextApi and Bootstrap .',
+      category: 'frontend',
+      url: 'https://abdelrahmann-ahmedd.github.io/weather-app/',
+      image: imageSrc09
     },
     {
       id: 3,
@@ -77,6 +78,14 @@ export default function Portfolio() {
       category: 'frontend',
       url: 'https://abdelrahmann-ahmedd.github.io/movie/',
       image: imageSrc03
+    },
+    {
+      id: 9,
+      title: 'Employee System',
+      description: 'A RESTful API built with Java and Springboot and React.',
+      category: 'fullstack',
+      url: 'https://github.com/Abdelrahmann-Ahmedd/React-Spring-FullStack-CRUD-System',
+      image: imageSrc07
     },
   ];
 
